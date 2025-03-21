@@ -69,8 +69,11 @@ input {
   border-radius: 5px;
   box-sizing: border-box;
 }
+input.success-border {
+  border-color: var(--valid-color);
+}
 input.error-border {
-  border-color: red;
+  border-color: var(--invalid-color);
 }
 button {
   width: 100%;
@@ -101,4 +104,13 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
+}
+#thankYouMessage {
+  display: none;
+  background-color: var(--background-color);
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  padding: 0.4rem;
+  max-width: 50%;
+  margin: 0 auto;
 }
