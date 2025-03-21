@@ -7,5 +7,33 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <h2>Registrer Information</h2>
+        <form id="userForm">
+          <label for="fname">Fornavn:</label>
+          <input type="text" id="fname" name="fname" required />
+
+          <label for="lname">Efternavn:</label>
+          <input type="text" id="lname" name="lname" required />
+
+          <label for="address">Adresse:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="postalcode">Postnummer:</label>
+          <input type="text" id="postalcode" name="postalcode" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <footer id="errorFooter">
+        <ul id="errorMessages"></ul>
+      </footer>
+      <section id="thankYouMessage">Tak for informationen!</section>
+    </main>
+  </body>
 </html>

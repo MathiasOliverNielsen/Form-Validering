@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #333;
-    --secondary-color: #f4f4f4;
-    --background-color: #d3d3d3;
-    --border-color: #ccc;
-    --hover-color: #444;
-    --active-color: #222;
-    --focus-color: #444;
-    --button-color: #4CAF50;
-    --button-hover-color: #45a049;
-    --valid-color: green;
-    --invalid-color: red;
+  --primary-color: #333;
+  --secondary-color: #f4f4f4;
+  --background-color: #d3d3d3;
+  --border-color: #ccc;
+  --hover-color: #444;
+  --active-color: #222;
+  --focus-color: #444;
+  --button-color: #4caf50;
+  --button-hover-color: #45a049;
+  --valid-color: green;
+  --invalid-color: red;
 }
 /* #region Global Styles */
 * {
@@ -19,16 +19,86 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--secondary-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary-color);
-  margin: 0;
-  padding: 0;
   text-align: center;
   margin-bottom: 1rem;
 }
 /* #endregion */
+
+/* main styleing */
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+/* #region Form Styles */
+#userForm {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+}
+/* #endregion */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input.error-border {
+  border-color: red;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Form Footer hidden*/
+#errorFooter {
+  /* display: none; */
+  background-color: var(--background-color);
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  padding: 0.4rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
