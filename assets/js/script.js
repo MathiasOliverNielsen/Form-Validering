@@ -13,6 +13,9 @@ let thankYouMessage = document.getElementById('thankYouMessage');
 // clear the error messages in list
 errorMessagesList.innerHTML = '';
 
+// reset error state
+document.querySelectorAll('input').forEach((input) => input.classList.remove('error-border'));
+
 function validateForm(id, regex, message) {
   let input = document.getElementById(id);
 
