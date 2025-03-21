@@ -114,3 +114,7 @@ ul {
   max-width: 50%;
   margin: 0 auto;
 }
+a {
+  color: var(--active-color);
+  text-decoration: none;
+}

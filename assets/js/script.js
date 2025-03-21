@@ -18,13 +18,11 @@ document.getElementById('userForm').addEventListener('submit', function (e) {
   let errorFooter = document.getElementById('errorFooter');
   let thankYouMessage = document.getElementById('thankYouMessage');
 
-  // Clear previous error messages and reset states
-  function clearErrors() {
-    document.getElementById('errorMessages').innerHTML = '';
-    document.querySelectorAll('input').forEach((input) => {
-      input.classList.remove('error-border', 'success-border');
-    });
-  }
+  // clear the error messages in list
+  errorMessagesList.innerHTML = '';
+
+  // reset error state
+  document.querySelectorAll('input').forEach((input) => input.classList.remove('error-border'));
 
   // validation function
   function validateForm(id, regex, message) {
