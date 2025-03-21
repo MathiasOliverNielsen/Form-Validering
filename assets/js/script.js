@@ -16,13 +16,14 @@ errorMessagesList.innerHTML = '';
 // reset error state
 document.querySelectorAll('input').forEach((input) => input.classList.remove('error-border'));
 
+// validation function
 function validateForm(id, regex, message) {
   let input = document.getElementById(id);
 
   if (!regex.test(input.value)) {
     input.classList.add('error-border');
     console.log(message);
-  } else {
-    input.classList.remove('error-border');
+    errorMessages.push(message);
+    isValid = false;
   }
 }
